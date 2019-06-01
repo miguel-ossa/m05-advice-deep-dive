@@ -30,7 +30,7 @@ public class AroundAdviceTest {
 	@Test
 	public void aroundAdviceIsCalledForSimpleMethod() {
 		assertFalse(aroundAspect.isCalled());
-		simpleService.doSomething();
+		simpleService.doSomething("Peter");
 		assertTrue(aroundAspect.isCalled());
 	}
 

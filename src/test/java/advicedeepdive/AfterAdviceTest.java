@@ -29,7 +29,7 @@ public class AfterAdviceTest {
   @Test
   public void afterAspectIsCalledIfMethodReturnsSuccessfully() {
     assertFalse(afterAdvice.isAfterCalled());
-    simpleService.doSomething();
+    simpleService.doSomething("peter");
     assertTrue(afterAdvice.isAfterCalled());
   }
 

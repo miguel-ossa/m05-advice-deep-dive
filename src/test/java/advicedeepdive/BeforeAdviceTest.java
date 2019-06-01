@@ -29,7 +29,7 @@ public class BeforeAdviceTest {
   @Test
   public void beforeIsCalledIfCorrectMethodIsCalled() {
     assertFalse(beforeAspect.isBeforeCalled());
-    simpleService.doSomething();
+    simpleService.doSomething("Peter");
     assertTrue(beforeAspect.isBeforeCalled());
   }
 

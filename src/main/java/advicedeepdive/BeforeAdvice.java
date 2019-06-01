@@ -23,7 +23,7 @@ public class BeforeAdvice {
     return beforeCalled;
   }
 
-  @Before("execution(void doSomething())")
+  @Before("execution(void doSomething(..))")
   public void entering(JoinPoint joinPoint) {
 //	  System.out.println("I am here");
     beforeCalled = true;

@@ -29,7 +29,7 @@ public class AfterThrowingAdviceTest {
 	@Test
 	public void afterThrowingIsNotCalledIfMethodReturnSuccessfully() {
 		assertFalse(afterThrowingAdvice.isAfterThrowingCalled());
-		simpleService.doSomething();
+		simpleService.doSomething("Peter");
 		assertFalse(afterThrowingAdvice.isAfterThrowingCalled());
 	}
 
